@@ -1,0 +1,169 @@
+a
+{
+	/*enlaces de la web*/
+	color: #064182;
+}
+body
+{
+	/*todo el cuerpo de la web*/
+	background: #ffffff;
+	font-family: "Arial";
+	font-size: 16px;
+}
+
+header
+{
+	border: 1px solid red;
+	background: #ffffff;
+	color: #064182;
+	position: relative;
+	display: inline-block;
+}
+header figure 
+{
+	float: left;
+}
+header #logokreasistem img
+{
+	/*border: 1px solid red;*/
+	width: 368px;
+	height: 170px;
+}
+
+nav 
+{
+	border: 1px solid blue;
+	position: relative;
+	display: inline-block;
+	top: 120px;
+	right: -20px;
+	float: right;
+
+}
+nav ul 
+{
+	/* quita los asteriscos del menu */
+	list-style: none;
+}
+nav ul li
+{
+	display: inline-block;
+	position: relative;
+	width: 8em;
+}
+nav ul li a
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 1.1em;
+	text-align: center;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	padding: 0.5em;
+	border-radius: 7px;
+}
+nav ul #botonazul a
+{
+	box-shadow: 0px 10px 7px  #DBE2EE;
+	background: #164E92;
+}
+nav ul #botonnaranja a
+{
+	box-shadow: 0px 10px 7px  #EBD8AF;
+	background: #DD7A00;
+}
+nav ul #botonlila a
+{
+	box-shadow: 0px 10px 7px  #D3B0EF;
+	background: #9E1385;
+}
+nav ul #botonceleste a
+{
+	box-shadow: 0px 10px 7px  #B5D1EB;
+	background: #25A6C4;
+}
+nav ul #botonfucsia a
+{
+	box-shadow: 0px 10px 7px  #D7B7CF;
+	background: #EE037E;
+}
+nav .imagen_boton img
+{
+	border: 1px solid red;
+	float: left;
+	display: inline-block;
+	width: 130px;
+	height: 63px;
+}
+
+#contenido
+{
+	border: 1px solid black;
+	background: #ffffff;
+	color: #064182;
+	margin: -1em;
+	position: relative;
+}
+#contenido #lineamenu img
+{
+	width: 1200px;
+	height: 28px;
+	border: 1px solid red;
+	margin-left: 1em;
+	margin-top: -0.8em;
+}
+#contenido #baner {
+	overflow: hidden;
+}
+#contenido #img_baner {
+	float: left;
+	margin-left: 4em;
+	display: inline-block;
+}
+#contenido #img_baner img {
+	width: 744px;
+	height: 390px;
+	margin-top: -0.8em;
+}
+#contenido #img_cuadrogris{
+	margin-right: 1em;
+}
+#contenido #img_cuadrogris img {
+	width: 402px;
+	height: 354px;
+}
+
+footer{
+	background: #ffffff;
+	color: #AAA;
+	position: relative;
+	font-size: 14px;
+}
+footer #imgpie img {
+	display: inline-block;
+	width: 1200px;
+	height: 148px;
+}
+footer .direccion{
+	position: absolute;
+	display: inline-block;
+	margin-top: -8.6em;
+	margin-left: 11em;
+}
+footer .informacion{
+	position: absolute;
+	display: inline-block;
+	margin-top: -7.7em;
+	margin-left: 46em;
+}
+footer .telefonos{
+	position: absolute;
+	display: inline-block;
+	margin-top: -7.7em;
+	margin-left: 75em;
+}
+footer p{
+	margin-top: -2.5em;
+	color: white;
+	text-align: center;
+}
