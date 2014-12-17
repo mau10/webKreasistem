@@ -107,25 +107,16 @@ nav ul #botonfucsia a
 }
 #contenido #publicidad
 {
-	background: red;
+	background: #ffffff;
 	display: inline-block;
-
 }
 #contenido #publicidad #lineamenu img
 {
 	width: 100%;
 	height: 50%;
 	margin: 0 0 0 0;
+	padding: 0;
 }
-
-#contenido #banderas
-{
-	background: blue;
-	display: inline-block;
-}
-
-/*
-
 #contenido #publicidad #img_baner {
 	position: relative;
 	float: left;
@@ -142,34 +133,77 @@ nav ul #botonfucsia a
 	position: relative;
 	float: right;
 	margin: 0em; 
+	display: inline-block;
 }
 #contenido #publicidad #img_cuadrogris img {
 	width: 320px;
 	height: 320px;
 }
 
-#banderas {
-	border: 1px solid green;
-	width: 100%;
-	position: relative;
-	background: #bbbbbb;
+#contenido #banderas
+{
+	background: #ffffff;
+	display: inline-block;
 }
-#banderas .imgcuadros{
+#contenido #banderas .imgcuadros{
 	display: inline-block;
 	margin-left: 1.7em;
 	margin-right: -1em;
 }
-#banderas .imgcuadros img {
+#contenido #banderas .imgcuadros img {
 	width: 290px;
 	height: 550px;
-
 }
-#banderas #cuadros .imgcuadros .titulo_item{
+#contenido #banderas #cuadros .titulo_item {
+	/*border: 1px solid green;*/	
 	position: absolute;
 	display: inline-block;
+	text-align: center;
+	margin-top: 2em;
+	width: 268px;
+	margin-left: -10.5em;
+	font-size: 1.6em;
+}
+#contenido #banderas #cuadros .titulo_item a{
 	text-decoration: none;
-	margin-top: 1em;
-	margin-left: 1em;
+	color: white;
+	font-style: italic;
+	padding: 1em;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+#contenido #banderas #cuadros .texto_item {
+	/*border: 1px solid green;*/	
+	position: absolute;
+	display: inline-block;
+	margin-top: 20em;
+	margin-left: -16em;
+	font-size: 1em;
+	width: 240px;
+	text-align: center;
+}
+#contenido #banderas #cuadros .texto_item a{
+	text-decoration: none;
+	color: white;
+	padding: 0em 0em;
+	text-shadow: rgba(0,0,0,0.2) 2px 2px 5px;
+}
+/*
+#contenido #banderas #cuadros .titulo_item2 {
+	display: inline-block;
+	border: 1px solid green;	
+position: absolute;
+	text-align: center;
+	margin-top: -17em;
+	margin-left: 30em;
+	width: 260px;
+	font-size: 2em;
+}
+#contenido #banderas #cuadros .titulo_item2 a{
+	text-decoration: none;
+	color: #164E92;
+	font-style: italic;
+	padding: 1em;
+	text-shadow: rgba(255,255,255,0.8) 2px 2px 5px;
 }
 */
 footer{
