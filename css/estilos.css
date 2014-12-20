@@ -258,9 +258,27 @@ header#krea ul #botonfucsia a
 #contenido #banderas .cuadros .texto_item a{
 	text-decoration: none;
 	color: white;
-	padding: 0em 0em;
-	text-shadow: rgba(0,0,0,0.2) 1px 1px 3px;
+/*	padding: 0em 0em;
+	text-shadow: rgba(0,0,0,0.2) 1px 1px 1px;*/
 	z-index: 9;
+}
+#contenido #banderas .cuadros .texto_enlace {
+	position: absolute;
+	display: inline-block;
+	top: 9em;
+	left: 3.1em;
+	font-size: 0.9em;
+	width: 240px;
+	text-align: left;
+}
+#contenido #banderas .cuadros .texto_enlace li{
+	border-bottom: 1px solid #CCC;
+	padding: 0.5em 0 0.5em 0.5em;
+}
+#contenido #banderas .cuadros .texto_enlace li a{
+	text-decoration: none;
+	color: #164E92;
+	z-index: 10;
 }
 
 footer{
