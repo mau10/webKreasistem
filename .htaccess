@@ -1,0 +1,26 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+#The next line modified by DenyIP
+order allow,deny
+#The next line modified by DenyIP
+#deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName kreasistem.com
+AuthUserFile /home/kreasist/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/kreasist/public_html/_vti_pvt/service.grp
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 93.158.134.1
+deny from 213.180.193.1

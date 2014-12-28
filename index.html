@@ -2,11 +2,14 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8"  />
-		<meta description="Kreasistem empresa de desarrollo de software a la medida" />
 		<title>Kreasistem Cia. Ltda.</title>
+	  	<meta name="keywords" content="Sistema, Kreasistem, Krea, Kreabc, Web, Multimedia" />
+		<meta description="Kreasistem empresa de desarrollo de software" />
 		
 		<link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 		<link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+
+
 
 		<!-- ANIMACION -->
 		<!-- Skitter Styles -->
@@ -14,8 +17,8 @@
 		<!-- Skitter JS -->
 		<script type="text/javascript" language="javascript" src="js/jquery-1.6.3.min.js"></script>		
 		<script type="text/javascript" language="javascript" src="js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" language="javascript" src="js/jquery.animate-colors-min.js"></script>
-		<script type="text/javascript" language="javascript" src="js/jquery.skitter.min.js"></script>			<!-- Init Skitter -->
+		<script type="text/javascript" language="javascript" src="js/jquery.skitter.min.js"></script>			
+		<!-- Init Skitter -->
 		<script type="text/javascript" language="javascript">
 			$(document).ready(function() {
 				$('.box_skitter_large').skitter({
@@ -28,7 +31,6 @@
 			});
 		</script>
 		<!-- FIN ANIMACION -->
-
 	</head>
 
 	<body>
@@ -39,19 +41,31 @@
 				</figure>
 			</div>
 			<div id="ingclientes">
-				<form action id="formulario" class="formulario">
-					<input type="text" id="usuario" placeholder="Usuario" required>
-					<input type="text" id="clave" placeholder="Clave" required>
+				<?php
+					// GESTION DE REQUERIMIENTOS
+					//conexion a la base de datos
+					require 'pag/conex.php';
+				?>	
+				<form action="pag/login.php" method="POST" id="formulario" class="formulario">
+					<input type="text" id="usuario" placeholder="Usuario*" required onfocus="inCampo(this)" onblur="outCampo(this)">
+					<input type="text" id="clave" placeholder="Clave*" required onfocus="inCampo(this)" onblur="outCampo(this)">
 					<input type="submit" value="Ingresar">
+					<div id="nuevo">
+						<a href="pag/formnewusr.php">No soy usuario todavia</a>
+					</div>
+					<div id="olvido">
+						<a href="pag/formreset.php">Olvide mi contraseña</a>
+					</div>
 				</form>
+
 			</div>	
 			<nav class="menu">
 				<ul>
 					<li id="botonazul"> <a href="#">Inicio</a></li>
 					<li id="botonnaranja"> <a href="#">Nosotros</a></li>
 					<li id="botonlila"> <a href="#">Productos</a></li>
-					<li id="botonceleste"> <a href="#" id="mostrar_form">Clientes</a></li>
-					<li id="botonfucsia"> <a href="#">Contacto</a></li>
+					<li id="botonceleste"> <a href="#" onclick="mostrarFormulario()">Clientes</a></li>
+					<li id="botonfucsia"> <a href="#" onclick="contacto()">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -189,8 +203,10 @@
 				derechos reservados 2.015
 			</p>
 		</footer>
-		<script src="js/formulario.js">
-		</script>
+		<!-- FUNCIONES JAVASRCIPT -->
+		<script type="text/javascript" src="js/formulario.js"></script>
+		<script type="text/javascript" src="js/contacto.js"></script>
+
 
 	</body>
 </html>

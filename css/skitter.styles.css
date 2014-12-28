@@ -6,23 +6,19 @@
 	height: 300px;
 	background: #164E92;
 }
-
 .box_skitter img {
 	max-width: none;
 } /* Tip for stildv */
 .box_skitter ul {
 	display: none;
 }
-
 .box_skitter .container_skitter {
 	overflow: hidden;
 	position: relative;
 }
-
 .box_skitter .image {
 	overflow: hidden;
 }
-
 .box_skitter .image img {
 	display: none;
 }
@@ -38,7 +34,6 @@
 	display: none;
 	z-index: 20;
 }
-
 .box_skitter .box_clone img {
 	position: absolute;
 	top: 0;
@@ -267,9 +262,9 @@
 	font: normal 22px arial,tahoma;
 	letter-spacing: -1px;
 }
-
+/* Barra de progreso MAU*/
 .box_skitter .progressbar {
-	background: #000;
+	background: #164E92;
 	position: absolute;
 	top: 5px;
 	left: 15px;
@@ -383,6 +378,7 @@
 
 /* =Example for dimenions
 -------------------------------------------------------------- */
+/* Fondo de atras MAU */
 .box_skitter_large {
 	width: 600px;
 	height: 300px;
@@ -408,14 +404,14 @@
 	background-position: -0px -0px !important;
 	width: 24px !important;
 	height: 28px !important;
-	left: -25px !important;
+	left: -2px !important;
 }
 
 .skitter-minimalist .next_button {
 	background-position: -0px -28px !important;
 	width: 24px !important;
 	height: 28px !important;
-	right: -25px !important;
+	right: -2px !important;
 }
 
 .skitter-minimalist .play_pause_button {

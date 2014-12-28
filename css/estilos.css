@@ -5,6 +5,15 @@ a
 	/*enlaces de la web*/
 	color: #064182;
 }
+h2 
+{
+	font-weight: bold; 
+	font-size: 1.2em; 
+	letter-spacing: -0.5px; 
+	font-style: italic; 
+	margin:20px 0 0 2px; 
+	color:#25A6C4; 
+}
 
 body
 {
@@ -49,7 +58,7 @@ header#krea #ingclientes
 	right: 0;
 	height: 54px;
 	margin-right: 30px;
-	margin-top: 30px;
+	margin-top: 12px;
     z-index: 40;
 }
 header#krea #ingclientes #formulario
@@ -66,11 +75,38 @@ header#krea #ingclientes .formulario input{
 	border-radius: 5px;
 	padding: 0.2em 0.6em;
 }
+header#krea #ingclientes #formulario #usuario{
+	text-transform: uppercase;
+}
+header#krea #ingclientes #formulario #clave{
+	text-transform: uppercase;
+}
 header#krea #ingclientes .formulario input[type="submit"]{
 	background: #CCC;
 	color: #164E92;
 	box-shadow: 0px 10px 7px  #DBE2EE;
 }
+header#krea #ingclientes #formulario #nuevo{
+	position: absolute;
+	font-size: 0.7em;
+	padding: 0.5em;
+	top: 40px;
+	right: 370px;
+	width: 150px;
+}
+header#krea #ingclientes #formulario #olvido{
+	position: absolute;
+	font-size: 0.7em;
+	padding: 0.5em;
+	top: 40px;
+	right: 175px;
+	width: 150px;
+}
+.enfoco{
+/*	border: 1px solid #25A6C4;*/
+	background: #DDD;
+}
+
 /* MENU */
 header#krea .menu 
 {
@@ -99,7 +135,7 @@ header#krea ul li a
 	font-size: 1em;
 	text-align: center;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
-	padding: 0.5em 1em;
+	padding: 0.5em;
 	border-radius: 7px;
 }
 header#krea ul #botonazul a
@@ -107,25 +143,50 @@ header#krea ul #botonazul a
 	box-shadow: 0px 10px 7px  #DBE2EE;
 	background: #164E92;
 }
+header#krea ul #botonazul a:hover
+{
+	background: #AAA;
+	font-weight: bold;
+}
 header#krea ul #botonnaranja a
 {
 	box-shadow: 0px 10px 7px  #EBD8AF;
 	background: #DD7A00;
+}
+header#krea ul #botonnaranja a:hover
+{
+	background: #AAA;
+	font-weight: bold;
 }
 header#krea ul #botonlila a
 {
 	box-shadow: 0px 10px 7px  #D3B0EF;
 	background: #9E1385;
 }
+header#krea ul #botonlila a:hover
+{
+	background: #AAA;
+	font-weight: bold;
+}
 header#krea ul #botonceleste a
 {
 	box-shadow: 0px 10px 7px  #B5D1EB;
 	background: #25A6C4;
 }
+header#krea ul #botonceleste a:hover
+{
+	background: #AAA;
+	font-weight: bold;
+}
 header#krea ul #botonfucsia a
 {
 	box-shadow: 0px 10px 7px  #D7B7CF;
 	background: #EE037E;
+}
+header#krea ul #botonfucsia a:hover
+{
+	background: #AAA;
+	font-weight: bold;
 }
 
 #contenido
